@@ -1,0 +1,8 @@
+5.5.0p3:2.0.0.0
+Android
+E:/Unity 5.5.0p3/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
+E:/Unity 5.5.0p3/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+E:/Unity 5.5.0p3/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll
+E:/Unity 5.5.0p3/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll
+E:/Unity 5.5.0p3/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll
+E:/Unity 5.5.0p3/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll
