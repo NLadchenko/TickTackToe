@@ -21,51 +21,7 @@ public class GameController : TTTElement
         else
             maxDepth = difficulty;
 
-        app.model.roundState = RoundState.Undefined;
-
-        //find elements in scene if not attached
-        if (app.gameView.winText == null)
-            app.gameView.winText = GameObject.Find("WinText");
-        if (app.gameView.drawText == null)
-            app.gameView.drawText = GameObject.Find("DrawText");
-        if (app.gameView.lossText == null)
-            app.gameView.lossText = GameObject.Find("LossText");
-
-        app.gameView.winText.SetActive(false);
-        app.gameView.drawText.SetActive(false);
-        app.gameView.lossText.SetActive(false);
-
-        //find elements in scene if not attached
-        if (app.gameView.resultPanel == null)
-            app.gameView.resultPanel = GameObject.Find("ResultPanel");
-        app.gameView.resultPanel.SetActive(false);
-
-        //find elements in scene if not attached
-        if (app.gameView.winCountText == null)
-            app.gameView.winCountText = GameObject.Find("WinsBody").GetComponent<Text>();
-        if (app.gameView.drawCountText == null)
-            app.gameView.drawCountText = GameObject.Find("DrawsBody").GetComponent<Text>();
-        if (app.gameView.lossCountText == null)
-            app.gameView.lossCountText = GameObject.Find("LossesBody").GetComponent<Text>();
-
-        //find elements in scene if not attached
-        if (app.gameView.gridButtons.Length != 9
-            || app.gameView.gridButtons[0] == null 
-            || app.gameView.gridButtons[1] == null 
-            || app.gameView.gridButtons[2] == null 
-            || app.gameView.gridButtons[3] == null 
-            || app.gameView.gridButtons[4] == null 
-            || app.gameView.gridButtons[5] == null 
-            || app.gameView.gridButtons[6] == null 
-            || app.gameView.gridButtons[7] == null 
-            || app.gameView.gridButtons[8] == null)
-        {
-            app.gameView.gridButtons = new GameObject[9];
-            for (int i = 0; i < 9; i++)
-            {
-                app.gameView.gridButtons[i] = GameObject.Find("CellButton_" + i.ToString());
-            }
-        }
+        app.model.roundState = RoundState.Undefined;               
 
         currentTurn = Cell.X;
         player = Cell.X;

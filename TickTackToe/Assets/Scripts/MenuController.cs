@@ -7,16 +7,7 @@ using System;
 
 public class MenuController : TTTElement
 {
-    //initialization
-    void Start()
-    {
-        //find elements in scene if not attached
-        if (app.menuView.startButton == null)
-            app.menuView.startButton = GameObject.Find("StartButton").GetComponent<Button>();
-        app.menuView.startButton.interactable = false;
-    }
-
-    
+  
     public void SetDifficulty(Difficulty difficulty)
     {
         if (app.model.GetNext(Command.Begin) == ProcessState.Active)
